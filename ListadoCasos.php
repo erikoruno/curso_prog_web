@@ -11,15 +11,19 @@
         <h3>Listado de casos a desarrollar en PHP</h3>
     </header>
     <section>
+
         <?php
-            for ($i=1; $i <= 7; $i++) { 
-                            
+            for ($i=1; $i <= 7; $i++) {   
         ?>
 
         <p>Caso <?php echo $i ?></p>
         <?php 
             }
+
+           
+
         ?>
+     
     </section>
 
     <footer>
