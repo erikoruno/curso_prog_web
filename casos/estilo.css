@@ -9,7 +9,7 @@ h3{
     text-align: center;
 }
 h6{
-    font-size: 50px;
+    font-size: 15px;
     color: rgb(53, 34, 139);
     text-align: center;
 }
@@ -37,3 +37,5 @@ form {
     background-color: blue;
     color: white;
 }
+
+
