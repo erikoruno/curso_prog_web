@@ -13,14 +13,14 @@
     <section>
 
     
-            <form action="caso5.php" method="post">
+            <form action="caso6.php" method="post">
                 <h4>VENTA DE PRODUCTOS ELECTRODOMÉSTICOS</h4>
                 <img src="img/electro.jpg" width="500" height="150" >
                     <?php
                     error_reporting(0);
                     $cliente = $_POST['txtCliente'];
                     $producto = $_POST['selProducto'];
-                    $cantidad = $_POST['txtxCantidad'];
+                    $cantidad = $_POST['txtCantidad'];
 
                     if ($producto == 'cocina') {
                         $selCocina = 'SELECTED';
@@ -76,11 +76,11 @@
                 <td class="etiqueta">Producto</td>
                 <td>
                     <select name="selProducto">
-                        <option value="cocina" >Cocina</option>
-                        <option value="refrigeradora" >Refrigeradora</option>
-                        <option value="television">Television</option>
-                        <option value="lavadora" >Lavadora</option>
-                        <option value="radiograbadora" >Radiograbadora</option>
+                        <option value="cocina" <?php echo $selCocina ?>>Cocina</option>
+                        <option value="refrigeradora" <?php echo $selRefrigeradora ?>>Refrigeradora</option>
+                        <option value="television" <?php echo $selTelevision ?>>Television</option>
+                        <option value="lavadora" <?php echo $selLavadora ?>>Lavadora</option>
+                        <option value="radiograbadora" <?php echo $selRadiograbadora ?>>Radiograbadora</option>
                     </select>
                 </td>
             </tr>
@@ -100,8 +100,10 @@
                         <td>
                             <?php
                             if ($producto == 'cocina') {
-                                $cocina = 1200;
+                                $precioproducto = 1200;
                             }
+
+                            $subtotalpagar = $cantidad * $precioproducto;
                             ?>
                         </td>
                     </tr>
@@ -109,18 +111,24 @@
             <tr>
                 <td class="etiqueta">Precio del producto</td>
                 <td>
-                    
+                    <?php
+                        echo $precioproducto;
+                    ?>
                 </td>
             </tr>
             <tr>
                 <td>Subtotal a pagar</td>
                 <td>
-
+                <?php
+                        echo $subtotalpagar;
+                    ?>               
                 </td>
             </tr>
             <tr>
                 <td>Monto de descuento</td>
-                <td></td>
+                <td>
+                    
+                </td>
             </tr>
             <tr>
                 <td>Monto a pagar</td>
