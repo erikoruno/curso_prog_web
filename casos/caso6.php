@@ -56,11 +56,7 @@
                     } else {
                         $selRadiograbadora = "";
                     }
-                        define("COCINA",1200);
-                        define("REFRI",2500);
-                        define("TELE",3200);
-                        define("LAVA",1200);
-                        define("RADIOGRABA",1200);
+                     
 
 
                     ?>
@@ -125,7 +121,7 @@
                 <td class="etiqueta">Precio del producto</td>
                 <td>
                     <?php
-                        printf("%.2f",$precioproducto) ;
+                        printf("S/ %.2f",$precioproducto) ;
                     ?>
                 </td>
             </tr>
@@ -133,7 +129,7 @@
                 <td>Subtotal a pagar</td>
                 <td>
                 <?php
-                        printf("%.2f",$subtotalpagar); 
+                        printf("S/ %.2f",$subtotalpagar); 
                         
                     ?>               
                 </td>
@@ -150,7 +146,7 @@
                         $montodscto = $subtotalpagar * 0.05;
                     }
 
-                    printf("%.2f", $montodscto);
+                    printf("S/ %.2f", $montodscto);
                     ?>
                 </td>
             </tr>
@@ -159,7 +155,7 @@
                 <td>
                     <?php
                         $montopagar = $subtotalpagar-$montodscto;
-                        printf("%.2f",$montopagar);
+                        printf("S/ %.2f",$montopagar);
                     ?>
                 </td>
             </tr>
