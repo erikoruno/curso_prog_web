@@ -49,7 +49,19 @@
                         $selD = "";
                     }
 
-
+                    if (empty($alumno)) {
+                        echo "<p style=\"color: red;\">Debe registrar nombre del alumno</p>";
+                    }
+                    if (empty($categoria)) {
+                        echo "<p style=\"color: blue;\">Debe seleccionar una categoria</p>";
+                    }
+                    if (empty($promedio)) {
+                        echo "<p style=\"color: green;\">Debe registrar promedio del alumno</p>";
+                    }
+                    
+                   // if (empty($alumno)) {
+                     //   echo '<script>alert("Debe registrar nombre de alumno!!");</script>';
+                   // }
 
                 ?>
 
@@ -59,7 +71,8 @@
                 <tr>
                     <td class="etiqueta">Nombre alumno</td>
                     <td>
-                        <input type="text" name="txtAlumno" size="30" placeholder="Ingrese su nombre" >
+                        <input type="text" name="txtAlumno" size="30" placeholder="Ingrese su nombre" 
+                        value=" <?php echo $alumno;?>">
                     </td>
                     
                 </tr>
@@ -79,7 +92,9 @@
                 <tr>
                     <td class="etiqueta">Ingrese promedio</td>
                     <td>
-                        <input type="text" name="txtPromedio" size="30" placeholder="Ingrese su promedio" >
+                        <input type="text" name="txtPromedio" size="30" placeholder="Ingrese su promedio" 
+                        value=" <?php echo $promedio;?>" >
+                        
                     </td>
                    
                 </tr>
@@ -132,14 +147,11 @@
                             }
                             if ($promedio >= 16 && $promedio <=17) {
                                 $dscto = 0.15;
-                            }
-                            if ($promedio >=18 && $promedio <=19) {
+                            } elseif ($promedio >=18 && $promedio<=19 ) {
                                 $dscto = 0.25;
-                            }
-                            if ($promedio = 20) {
-                                $dscto = 0.50;
-                            }
-                            if ($promedio >20) {
+                            } elseif ($promedio == 20) {
+                                $dscto = 0.5;
+                            } elseif ($promedio > 20) {
                                 $dscto = 0;
                             }
 
@@ -152,7 +164,8 @@
                     <td class="etiqueta">Monto a cancelar</td>
                     <td>
                         <?php
-                            
+                            $montocancelar = $montomensual-$montodscto;
+                            printf("S/ %.2f",$montocancelar);
                         ?>
                     </td>
                 </tr>
