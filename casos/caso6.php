@@ -102,6 +102,19 @@
                             if ($producto == 'cocina') {
                                 $precioproducto = 1200;
                             }
+                            if ($producto == 'refrigeradora') {
+                                $precioproducto = 2500;
+                            }
+
+                            if ($producto == 'television') {
+                                $precioproducto = 3200;
+                            }
+                            if ($producto == 'lavadora') {
+                                $precioproducto = 1000;
+                            }
+                            if ($producto == 'radiograbadora') {
+                                $precioproducto = 700;
+                            }
 
                             $subtotalpagar = $cantidad * $precioproducto;
                             ?>
@@ -112,7 +125,7 @@
                 <td class="etiqueta">Precio del producto</td>
                 <td>
                     <?php
-                        echo $precioproducto;
+                        printf("%.2f",$precioproducto) ;
                     ?>
                 </td>
             </tr>
@@ -120,19 +133,35 @@
                 <td>Subtotal a pagar</td>
                 <td>
                 <?php
-                        echo $subtotalpagar;
+                        printf("%.2f",$subtotalpagar); 
+                        
                     ?>               
                 </td>
             </tr>
             <tr>
                 <td>Monto de descuento</td>
                 <td>
-                    
+                    <?php
+                    if ($subtotalpagar > 10000) {
+                        $montodscto = $subtotalpagar *0.1;
+                    } 
+
+                    if ($subtotalpagar < 10000) {
+                        $montodscto = $subtotalpagar * 0.05;
+                    }
+
+                    printf("%.2f", $montodscto);
+                    ?>
                 </td>
             </tr>
             <tr>
                 <td>Monto a pagar</td>
-                <td></td>
+                <td>
+                    <?php
+                        $montopagar = $subtotalpagar-$montodscto;
+                        printf("%.2f",$montopagar);
+                    ?>
+                </td>
             </tr>
 
             </table>
