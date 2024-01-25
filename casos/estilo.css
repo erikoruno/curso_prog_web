@@ -1,5 +1,5 @@
 body{
-    font-family: "Courier New";
+    font-family: "Century Gothic";
     font-size: 14px;
 }
 h3{
@@ -39,3 +39,21 @@ form {
 }
 
 
+/*
+Arial: font-family: Arial, sans-serif;
+Helvetica: font-family: Helvetica, sans-serif;
+Times New Roman: font-family: "Times New Roman", serif;
+Georgia: font-family: Georgia, serif;
+Courier New: font-family: "Courier New", monospace;
+Verdana: font-family: Verdana, sans-serif;
+Palatino: font-family: Palatino, serif;
+Impact: font-family: Impact, sans-serif;
+Arial Black: font-family: "Arial Black", sans-serif;
+Cursive: font-family: Cursive, sans-serif;
+Fantasy: font-family: Fantasy, sans-serif;
+Garamond: font-family: Garamond, serif;
+Lucida Console: font-family: "Lucida Console", monospace;
+Tahoma: font-family: Tahoma, sans-serif;
+Book Antiqua: font-family: "Book Antiqua", serif;
+Century Gothic: font-family: "Century Gothic", sans-serif;
+*/
