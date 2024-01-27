@@ -27,7 +27,7 @@ td.etiqueta9 {
     padding-right: 100px;
 }
 form {
-    border: 5px solid #336699; /* Borde gris de 1 píxel */
+    border: 10px solid #336699; /* Borde gris de 1 píxel */
     padding: 20px; /* Espaciado interno */
     max-width: 500px; /* Ancho máximo del formulario */
     margin: 0 auto; /* Centrar el formulario en la página */
