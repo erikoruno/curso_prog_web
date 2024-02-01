@@ -1,13 +1,14 @@
 body{
-    font-family: "Garamond", serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     color: #333;
+   
 }
 h3{
     font-size: 30px;
     font-weight: bold;
     color: rgb(51, 117, 94);
-    text-align: center;
+    text-align: "";
 }
 h6{
     font-size: 15px;
@@ -18,7 +19,12 @@ h6{
 h4{
     font-size: 20px;
     color: rgb(99, 78, 196);
-    text-align: center;
+    text-align: "";
+}
+h5{
+    font-size: 16px;
+    color: #333;
+    text-align: "";
 }
 td.etiqueta {
     padding-right: 100px; /* Ajusta este valor según tus preferencias */
@@ -28,10 +34,10 @@ td.etiqueta9 {
     padding-right: 100px;
 }
 form {
-    border: 10px solid #336699; /* Borde gris de 1 píxel */
+    border: 0.5px solid #5086bc; /* Borde gris de 1 píxel */
     padding: 20px; /* Espaciado interno */
     max-width: 500px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centrar el formulario en la página */
+    margin-left: 0 ; /* Centrar el formulario en la página */
 }
 .btn-verde {
     background-color:cadetblue;
@@ -84,6 +90,19 @@ form {
   
   .danger {background-color: #f44336;} 
   .danger:hover {background: #da190b;}
+
+  .container {
+    display: flex;
+    width: 100%;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    
+}
+
+
 
 /*
 Arial: font-family: Arial, sans-serif;
