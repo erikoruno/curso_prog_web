@@ -1,5 +1,5 @@
 <?php
-
+//  Crear una clase Automovil
 class Automovil{
     
         public $placa;
@@ -8,7 +8,24 @@ class Automovil{
         public $año;
         public $color;
         public $cilindrada;
+
+        public function mostrarInformacionDeAutos(){
+            echo "El automóvil ".$this->marca." de modelo".$this->modelo;
+        }
+
+        public function acelera($acelerar){
+            if ($acelerar>90) {
+                echo "<br>";
+                echo "El automóvil esta con más de 90 km/h";
+            } else {
+                echo "<br>";
+                echo "El automóvil esta con menos de 90 km/h";
+            }
+        }
+
 }
+
+          
 
         $auto1 = new Automovil;
         $auto2 = new Automovil;
@@ -58,28 +75,31 @@ class Automovil{
         $auto5->color = "Rojo";
         $auto5->cilindrada = "5cc";
 
-        echo "Lista de autos";
-        echo "<br>";
-        echo "<br>";
-        echo "El ".$auto1->marca." modelo ". $auto1->modelo." de año ".$auto1->año." de color "
-        .$auto1->color." y cilindrada ".$auto1->cilindrada;
-        echo "<br>";
+        $auto1 -> mostrarInformacionDeAutos();
+        $auto1 -> acelera(85);
+
+        // echo "Lista de autos";
+        // echo "<br>";
+        // echo "<br>";
+        // echo "El automóvil ".$auto1->marca." modelo ". $auto1->modelo." de año ".$auto1->año." de color "
+        // .$auto1->color." y cilindrada ".$auto1->cilindrada;
+        // echo "<br>";
         
-        echo "El ".$auto2->marca." modelo ". $auto2->modelo." de año ".$auto2->año." de color "
-        .$auto2->color." y cilindrada ".$auto2->cilindrada;
-        echo "<br>";
+        // echo "El automóvil ".$auto2->marca." modelo ". $auto2->modelo." de año ".$auto2->año." de color "
+        // .$auto2->color." y cilindrada ".$auto2->cilindrada;
+        // echo "<br>";
 
-        echo "El ".$auto3->marca." modelo ". $auto3->modelo." de año ".$auto3->año." de color "
-        .$auto3->color." y cilindrada ".$auto3->cilindrada;
-        echo "<br>";
+        // echo "El automóvil ".$auto3->marca." modelo ". $auto3->modelo." de año ".$auto3->año." de color "
+        // .$auto3->color." y cilindrada ".$auto3->cilindrada;
+        // echo "<br>";
 
-        echo "El ".$auto4->marca." modelo ". $auto4->modelo." de año ".$auto4->año." de color "
-        .$auto4->color." y cilindrada ".$auto4->cilindrada;
-        echo "<br>";
+        // echo "El automóvil ".$auto4->marca." modelo ". $auto4->modelo." de año ".$auto4->año." de color "
+        // .$auto4->color." y cilindrada ".$auto4->cilindrada;
+        // echo "<br>";
 
-        echo "El ".$auto5->marca." modelo ". $auto5->modelo." de año ".$auto5->año." de color "
-        .$auto5->color." y cilindrada ".$auto5->cilindrada;
-        echo "<br>";
+        // echo "El automóvil ".$auto5->marca." modelo ". $auto5->modelo." de año ".$auto5->año." de color "
+        // .$auto5->color." y cilindrada ".$auto5->cilindrada;
+        // echo "<br>";
        
 
 ?>
