@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funciones numéricas</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -422,7 +422,7 @@
         </form>
     </div>
     <footer>
-        <h6>Todos los derechos reservados @eriko@</h6>
+        <h6>Todos los derechos reservados @JAE@</h6>
     </footer>
     <script>
         function abrirNuevaVentana() {

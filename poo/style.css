@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+   
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(51, 117, 94);
+    text-align: "";
+}
+h6{
+    font-size: 15px;
+    color: rgb(53, 34, 139);
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+    color: rgb(99, 78, 196);
+    text-align: "";
+}
+h5{
+    font-size: 16px;
+    color: #333;
+    text-align: "";
+}
+td.etiqueta {
+    padding-right: 100px; /* Ajusta este valor según tus preferencias */
+}
+
+td.etiqueta9 {
+    padding-right: 100px;
+}
+form {
+    border: 0.5px solid #5086bc; /* Borde gris de 1 píxel */
+    padding: 20px; /* Espaciado interno */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin-left: 0 ; /* Centrar el formulario en la página */
+}
+.btn-verde {
+    background-color:cadetblue;
+    
+}
+
+.btn-azul {
+    background-color: blue;
+    color: white;
+}
+
+.btn {
+    border: none; 
+    color: black; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+  .primary {background-color: white; border: 2px solid #007bff;} 
+  .primary:hover {background: #0b7dda; color: white;}
+  .secondary {background-color: white; border: 2px solid #e7e7e7;} 
+  .secondary:hover {background: #ddd; color: white;}
+  .success {background-color: white; border: 2px solid #04AA6D;} 
+  .success:hover {background-color: #46a049; color: white;}
+  .warning {background-color: white; border: 2px solid #ff9800;} 
+  .warning:hover {background: #e68a00; color: white;}
+  .danger {background-color: white; border: 2px solid #f44336;} 
+  .danger:hover {background: #da190b; color: white;}
+
+
+  .btn {
+    border: none; 
+    color: white; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+  }
+  
+  .primary {background-color: #007bff;} 
+  .primary:hover {background: #0b7dda;}
+  
+  .secondary {background-color: #e7e7e7; color: black;} 
+  .secondary:hover {background: #ddd;}
+  
+  .success {background-color: #04AA6D;} 
+  .success:hover {background-color: #46a049;}
+  
+  .warning {background-color: #ff9800;} 
+  .warning:hover {background: #e68a00;}
+  
+  .danger {background-color: #f44336;} 
+  .danger:hover {background: #da190b;}
+
+  .container {
+    display: flex;
+    width: 100%;
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    
+}
+
+
+
+/*
+Arial: font-family: Arial, sans-serif;
+Helvetica: font-family: Helvetica, sans-serif;
+Times New Roman: font-family: "Times New Roman", serif;
+Georgia: font-family: Georgia, serif;
+Courier New: font-family: "Courier New", monospace;
+Verdana: font-family: Verdana, sans-serif;
+Palatino: font-family: Palatino, serif;
+Impact: font-family: Impact, sans-serif;
+Arial Black: font-family: "Arial Black", sans-serif;
+Cursive: font-family: Cursive, sans-serif;
+Fantasy: font-family: Fantasy, sans-serif;
+Garamond: font-family: Garamond, serif;
+Lucida Console: font-family: "Lucida Console", monospace;
+Tahoma: font-family: Tahoma, sans-serif;
+Book Antiqua: font-family: "Book Antiqua", serif;
+Century Gothic: font-family: "Century Gothic", sans-serif;
+*/

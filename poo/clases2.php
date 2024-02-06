@@ -62,7 +62,7 @@ class Automovil{
         //objeto auto4
         $auto4->placa = "GRR567";
         $auto4->marca = "Ford";
-        $auto4->modelo = "Frontier";
+        $auto4->modelo = "Ranger";
         $auto4->año = 2021;
         $auto4->color = "Negro";
         $auto4->cilindrada = "3cc";

@@ -146,16 +146,16 @@ if (checkdate($mes, $dia, $anio)) {
 
 //funcion GETDATE
 
-$fecha_actual = getdate();
+$fecha_act = getdate();
 
 // Mostrar la información obtenida
-echo "Día de la semana: " . $fecha_actual['weekday'] . "<br>";
-echo "Día del mes: " . $fecha_actual['mday'] . "<br>";
-echo "Mes: " . $fecha_actual['month'] . "<br>";
-echo "Año: " . $fecha_actual['year'] . "<br>";
-echo "Hora: " . $fecha_actual['hours'] . "<br>";
-echo "Minutos: " . $fecha_actual['minutes'] . "<br>";
-echo "Segundos: " . $fecha_actual['seconds'] . "<br>";
+echo "Día de la semana: " . $fecha_act['weekday'] . "<br>";
+echo "Día del mes: " . $fecha_act['mday'] . "<br>";
+echo "Mes: " . $fecha_act['month'] . "<br>";
+echo "Año: " . $fecha_act['year'] . "<br>";
+echo "Hora: " . $fecha_act['hours'] . "<br>";
+echo "Minutos: " . $fecha_act['minutes'] . "<br>";
+echo "Segundos: " . $fecha_act['seconds'] . "<br>";
 
 $hoy = getdate();
 print_r($hoy);
