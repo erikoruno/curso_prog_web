@@ -42,9 +42,9 @@ class Coche{
 
     public function estado (){
         if ($this->velocidad > 0) {
-            return "Moviendose";
-        } else {
             return "Parado";
+        } else {
+            return "Moviendose";
         }
     }
 
